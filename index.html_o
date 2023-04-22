@@ -141,7 +141,7 @@
 			<li>
 			   <a href="https://youtu.be/QasYx3heSmQ">
 				<div class="video-container">
-			   	  <iframe class="video" width="600" src="https://www.youtube.com/embed/QasYx3heSmQ?autoplay=1&mute=1&loop=1" allowfullscreen>
+			   	  <iframe class="video" src="https://www.youtube.com/embed/QasYx3heSmQ?autoplay=1&mute=1&loop=1" allowfullscreen>
 			   	  </iframe>
 				</div>
 			   	<h4><strong>Multi-Robot Collaboration</strong></h4>
@@ -173,18 +173,9 @@
                     </ul>
                 </div>
         </div>
-
-
-   
-        
-
+                  
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-<!--                 <p style="text-align:center;">
-        	    	<video id="v0" width="100%" playsinline autoplay muted loop controls>
-                       <source src="img/rt1_mosaic_comp.mp4" type="video/mp4">
-                   </video>
-                </p> -->
                 <h3>
                     Abstract
                 </h3>
@@ -207,6 +198,33 @@
                 </p>
             </div>
         </div>
+                  
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Introduction
+                </h3>
+                <p class="text-justify">
+                  Using large language models (LLMs) for task and motion planning has shown promising potential.
+                  Robots today can exploit the rich world knowledge of large language models to chain simple behavioral skills into long-horizon tasks. 
+                  However, robots often get interrupted during long-horizon tasks due to primitive skill failures and dynamic environments. We propose 
+                  VADER, a <em>plan, execute, detect</em> framework with <em>seeking help</em> as a new skill that enables robots to recover and 
+                  complete long-horizon tasks with the help of humans or other robots. VADER leverages visual question answering (VQA) modules to detect 
+                  <em>visual affordances</em> and recognize <em>execution errors</em>. It then generates prompts for a language model planner (LMP) which 
+                  decides when to seek help from another robot or human to <em>recover from errors</em> in long-horizon task execution. We show the 
+                  effectiveness of VADER through an experiment with a mobile manipulator asking for help from another mobile manipulator or another human 
+                  for completing two long-horizon robotic tasks. Our user study with 19 participants suggests VADER is perceived to complete tasks more 
+                  successfully than a control which does not ask for help, yet VADER is perceived as equally capable even though it receives human help. 
+              </p>
+             <p style="text-align:center;">
+        	    	<video id="v0" width="100%" playsinline autoplay muted loop>
+                       <source src="https://youtu.be/QasYx3heSmQ" type="video/mp4">
+                   </video>
+                   VADER shows better performance thanks to its ability to absorb environmental cues into the planning loop, detect errors or failures and recover.
+                </p>
+            </div>
+        </div>
+                  
 
 <!-- 	<div class="row">
             <div class="col-md-8 col-md-offset-2">
