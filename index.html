@@ -190,55 +190,38 @@
                   for completing two long-horizon robotic tasks. Our user study with 19 participants suggests VADER is perceived to complete tasks more 
                   successfully than a control which does not ask for help, yet VADER is perceived as equally capable even though it receives human help. 
               </p>
-             <p style="text-align:center;">
-        	    	<video id="v0" width="100%" playsinline autoplay muted loop>
-                       <source src="https://youtu.be/QasYx3heSmQ" type="video/mp4">
-                   </video>
-                   VADER shows better performance thanks to its ability to absorb environmental cues into the planning loop, detect errors or failures and recover.
-                </p>
             </div>
         </div>
                   
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Introduction
+                    Overview
                 </h3>
                 <p class="text-justify">
-                  Using large language models (LLMs) for task and motion planning has shown promising potential.
-                  Robots today can exploit the rich world knowledge of large language models to chain simple behavioral skills into long-horizon tasks. 
-                  However, robots often get interrupted during long-horizon tasks due to primitive skill failures and dynamic environments. We propose 
-                  VADER, a <em>plan, execute, detect</em> framework with <em>seeking help</em> as a new skill that enables robots to recover and 
-                  complete long-horizon tasks with the help of humans or other robots. VADER leverages visual question answering (VQA) modules to detect 
-                  <em>visual affordances</em> and recognize <em>execution errors</em>. It then generates prompts for a language model planner (LMP) which 
-                  decides when to seek help from another robot or human to <em>recover from errors</em> in long-horizon task execution. We show the 
-                  effectiveness of VADER through an experiment with a mobile manipulator asking for help from another mobile manipulator or another human 
-                  for completing two long-horizon robotic tasks. Our user study with 19 participants suggests VADER is perceived to complete tasks more 
-                  successfully than a control which does not ask for help, yet VADER is perceived as equally capable even though it receives human help. 
-              </p>
-             <p style="text-align:center;">
-        	    	<video id="v0" width="100%" playsinline autoplay muted loop>
-                       <source src="https://youtu.be/QasYx3heSmQ" type="video/mp4">
-                   </video>
-                   VADER shows better performance thanks to its ability to absorb environmental cues into the planning loop, detect errors or failures and recover.
+		  We have seen powerful machine learning models enhancing capabilities in the world of Robotics. An interesting case is that of language 
+		  model planners or LMPs that use large language models extending their generalization potential to Task and Motion Planning. LMPs enable
+		  execution of complex, long horizon tasks that can be expressed into a chain of simpler, low level skills that a robot has acquired (by 
+		  way of machine learning techniques that can absorb data from past experiences). While LMPs readily exploit the rich knowledge of the 
+		  world embedded in these large language models, they lack grounding with the robot's environment which is often necessary to accommodate 
+		  dynamic changes to its surroundings requiring replanning. Inability to replan often yields undesired execution results. For example, 
+		  the robot in the following video fails to <it>pick up</it> the debris from the table, but continues approaching the trash bin - a behavior
+		  that would adversely impact usefulness of such a robotic assistant in real life.
                 </p>
             </div>
         </div>
-                  
-
-<!-- 	<div class="row">
+			
+	<div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Video
-                </h3>
-                <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UuKAp9a6wMs" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-                    </div>
-                </div>
+              <a href="https://youtu.be/cDespQNfPjI">
+	        <div class="video-container">
+		  <iframe class="video" src="https://www.youtube.com/embed/cDespQNfPjI?autoplay=0&mute=1&loop=1"></iframe>
+		</div>
+                <h4><strong>Robot-Human Collaboration</strong></h4>
+              </a>
             </div>
         </div>
- -->
+
 
 <!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
