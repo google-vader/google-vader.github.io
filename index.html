@@ -239,13 +239,14 @@
       </p>
       <p>
       Our key insight is that by grounding with their environments, robots can detect their failures and collaborate with other robots, and humans to course 
-      correct through planning. Today's visual question answering (VQA) systems~\cite{chen2022pali} can provide the required grounding mechanism, where 
+      correct through planning. Today's visual question answering (VQA) systems can provide the required grounding mechanism, where 
       natural language summary on a visual observation can be generated within the context of a query. But a multi robot human collaboration is hard due to 
       lack of a mechanism for distributed communication that enables agents to post or claim tasks and provide assistance to each other.
       </p>
       <p>
-      We introduce a general-purpose technique called VADER which uses feedback from affordance and error detection to generate requests for help from other 
-      agents.
+      We introduce a general-purpose technique called VADER that offers grounding to the agent's environment by plugging in VQA in the LMP loop. VADER uses 
+      feedback from (visual) affordance and invokes error detection to generate requests for help from other agents. VADER is effectively a <b>plan, execute, 
+      detect</b> loop.
       </p>
       <p style="text-align:center">
       <image src="img/VADER_small.png" height="500px">
