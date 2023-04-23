@@ -231,25 +231,26 @@
 	<br>
 	<div class="row">
 	  <div class="col-md-10 col-md-offset-1 text-justify">
+      <p>
       <em>Inner Monologue</em> like extentions improve reliability of execution by incorporating a variety of environment feedback into the LMP planning 
       loop. However, these systems typically focus on failures that can be resolved by a single robot without any external help. In situations like that 
             depicted in the video above, the robot is likely to receover from the failure even after multiple retries or without an external human intervention,
       since the coke can is outside its reach that the <i>picking skill</i>  training assumed.
-      <br>
+      </p>
+      <p>
       Our key insight is that by grounding with their environments, robots can detect their failures and collaborate with other robots, and humans to course 
       correct through planning. Today's visual question answering (VQA) systems~\cite{chen2022pali} can provide the required grounding mechanism, where 
       natural language summary on a visual observation can be generated within the context of a query. But a multi robot human collaboration is hard due to 
       lack of a mechanism for distributed communication that enables agents to post or claim tasks and provide assistance to each other.
-      
-      <br>
+      </p>
+      <p>
       We introduce a general-purpose technique called VADER which uses feedback from affordance and error detection to generate requests for help from other 
       agents.
-      <p style="text-align:center;">
-        <image src="img/VADER_small.png" height="500px">        	   
-      </p>
+      <image src="img/VADER_small.png" height="500px">
       This allows the system to dynamically detect failures and employ recovery measures, thus enabling it to complete long horizon tasks. We also introduce
       a generic cloud-based communication framework, <em> HRFS </em> to facilitate this assistive collaboration, instantiated with robot agents working 
       alongside humans.
+      </p>
     </div>
 	</div>
 
