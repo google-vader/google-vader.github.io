@@ -278,7 +278,56 @@
       </a>
     </div>
   </div>
+  
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h3> 
+        VADER: Algorithm
+      </h3>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h3> 
+        Human Robot Fleet Orchestration System (HRFS)
+      </h3>
+      <p class="text-justify">
+        Human Robot Fleet Orchestration System (HRFS) is a scalable cloud based service that offers a <b>real-time communication platform</b> to many active simultaneous
+        for its participants. It is inherently elastic and scalable with respect to number of active simultaneous participants. 
+      </p>
+      <p class="text-justify">
+        At its heart, HRFS is a database with transactional guarantees which maintains the most current state of the system, along with a plug-and-play client 
+        interface to facilitate interaction with the database and provide communication scheduling between various clients via the database state. The database 
+        maintains information about tasks pushed to HRFS and metadata associated with them such as the requester, task input specifications like a 
+        <i>text-instruction</i>, task execution context like preferences of the requesting entity, any constraints to be followed during the execution, task 
+        execution logging events pushed by the executor and various timestamps associated with these events. For example, a robot may push a task like 
+        <i>``open the door"</i> with an executor preference of <i>``human"</i> with a context providing the building or position address or identifier where 
+        the door is located. 
+      </p>
+      <p class="text-justify">
+        HRFS maintains an elastic list of <em>rooms</em> or <em>constraints</em> that identify a logical boundary. For example, a building, 
+        an area like lobby in a building, a type of morphology, type of tasks, or simply a robot identifier. A newly participating entity - human or robot alike, 
+        subscribes to HRFS providing one or more types of constraints or tasks 
+        it would be interested in serving. For example, upon coming alive a robot may declare it is available for executing tasks in a build <i>bldg123</i>, tasks 
+        that involve a <i>wiping tool</i>. Note, a participant can change its subscription pattern anytime while alive and connected to HRFS. For example, a robot 
+        delivering an item from <i>kitchen</i> to <i>lobby</i> was subscribed to the former at the beginning of task execution (and hence received the delivery 
+        task request) but may update subscription to <i>lobby</i> at the end of successful delivery. HRFS maintains a dynamic mapping of current participant to 
+        its subscriptions. 
+      </p>
+      <p class="text-justify">
+        As new tasks become available, HRFS pushes them to all eligible participants and any next available participant can claim it. Once claimed by a participant, 
+        HRFS locks it unavailable for any other entity to claim. Each participant while alive on the HRFS, is required to report its <em>heart-beat</em> periodically 
+        to HRFS, failure to doing so for an extended period, HRFS may mark this entity as absent and recover or reassign any tasks currently claimed by this entity. 
+        On the other hand, during execution of the claimed task the executor can push execution logging events in the spirit of reporting back to the requester on 
+        the latest execution update. Once the task is completed, the executor is required to update HRFS, which in turn is responsible for instantaneously pushing 
+        all these updates back to the requester. The two or more entities bound during a task execution this was are termed <em>in-contract</em>. Note, none of the 
+        participants interact with each other directly and hence may or may not be aware of each others' identities unless in-contract.
+      </p>
+    </div>
+  </div>
+	
+			
 <!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
             	<br>
