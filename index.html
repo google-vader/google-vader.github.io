@@ -338,8 +338,13 @@
               to HRFS, failure to doing so for an extended period, HRFS may mark this entity as absent and recover or reassign any tasks currently claimed by this entity. 
               On the other hand, during execution of the claimed task the executor can push execution logging events in the spirit of reporting back to the requester on 
               the latest execution update. Once the task is completed, the executor is required to update HRFS, which in turn is responsible for instantaneously pushing 
-              all these updates back to the requester. The two or more entities bound during a task execution this was are termed <em>in-contract</em>. Note, none of the 
+              all these updates back to the requester. The two or more entities bound during a task execution this way are termed <em>in-contract</em>. Note, none of the 
               participants interact with each other directly and hence may or may not be aware of each others' identities unless in-contract.
+            </p>
+            <p class="text-justify">
+              The HRFS implementation used in this work involved use of a custom <a href="https://firebase.google.com/docs/database">Firebase Realtime Database</a> instance
+              that readily provides a lot of functionality for such a fleet orchestration and was inspired from <a href="https://www.youtube.com/watch?v=7alAjOz4ykY">this 
+              example video</a>.
             </p>
           </div>
         </div>
