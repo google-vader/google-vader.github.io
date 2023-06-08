@@ -295,7 +295,7 @@
             <h3> 
               VADER: Algorithm
             </h3>
-            <p>
+            <p class="text-justify">
               In a nutshell, VADER is a <b> plan, execute, detect </b> framework that employs a Vision Question Answering or <i>VQA</i> module to close the planning and execution loop via 
               a state or context detection. For a long horizon task, say <i>wipe (clean) the table</i>, the large language model based planner or <i>LMP</i> is invoked to express it in terms
               of low-level skils the robot is capable of executing. Given the current environmental state, the skill with the highest affordence is selected, say <i> go to table</i> and 
@@ -304,6 +304,13 @@
               to any deviations or errors. Deviations could include failures in skill execution, losing the capacity for executing the skill (for example, breaking a gripper), or even 
               incorrectly picking up tasks it can’t complete given its skillset
             </p>
+            <p style="text-align:center">
+              <image src="img/vader_algorithm.png" width="80%">
+            </p>  
+
+            <p style="text-align:center">
+              <image src="img/lmp_o_vqa_2.png" width="80%">
+            </p>  
 		  
           </div>
         </div>
