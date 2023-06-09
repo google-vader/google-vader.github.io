@@ -302,7 +302,7 @@
               <image src="img/lmp_o_vqa_2.png" width="40%" align="right" hspace="20" vspace="20"/>
               For a long horizon task, say <i>"I am out of ink in my pen and need something to write"</i>, the large language model based planner or <i>LMP</i> is 
               invoked to express it in terms of low-level skils that a robot is capable of executing, as shown in the cartoon on the right. 
-              Given the current environmental state, the skill with the highest affordence is selected, say <i> go/navigate to the desk</i> and 
+              Given the current environmental state, the skill with the highest affordence, say <i> navigate to the desk</i> is selected, and 
               executed. Simultaneously, a natural language description for the expected post-execution state is generated, say <i> in front of the desk</i>. Upon 
               completion of the current skill execution the expectation is checked against the fresh state estimation using the VQA and the (natural language) output 
               is fed back in order to potential re-planning in response to any deviations or errors. Deviations could include failures in skill execution, losing the 
@@ -317,6 +317,9 @@
             </p>  
 
             <p style="text-align:center">
+              VADER adds three key components to an LMP to enable recovery from failures: (a) <i>detection</i> of skill affordances 
+              and execution errors with visual question answering, (b) <i>replanning</i> based on the detected categories of failures, 
+              and (c) <i>recovery</i> based on seeking help from other agents.
             </p>  
 		  
           </div>
@@ -335,7 +338,10 @@
 	          
             <p style="text-align:center">
               <image src="img/hrfs.png" width="80%">
-            </p>  
+            </p>
+              
+            <p class="text-justify">
+            </p>
 		  
             <p class="text-justify">
                 At its heart, HRFS is a <b>database with transactional guarantees</b> which maintains the most current state of the system, along with a <b>plug-and-play client 
